@@ -1,24 +1,8 @@
-=====
-MythTV Project Info
-=====
 
-Useful project links
------
 
- - `Trac bug tracker <https://code.mythtv.org/trac>`_
+Fork and my personal subproject of mythtv that focuses on free tv or over the air tv support; as such, device support will be fairly limited to such as DVB.HDHOMERUN.ATSC and other standards in other countries), maybe iptv as well.
 
-   - Please note: If you create a pull request, we expect a corresponding
-     ticket to be created in Trac with a link to the pull request in it.  
-     Trac is our canonical bug tracking location, and many of our developers
-     may not notice the pull request otherwise.
+These builds will have limited plugins as well with no web browser such as mythbrower. QtWebkit support has been removed and anything depending on it may not work in these builds. TBD.
 
-   - Please also note that we only support code that is from the canonical
-     fork at https://github.com/MythTV  For other forks, please send bug
-     reports to the owners of the fork where the code was committed.
-
- - `Forums <https://forum.mythtv.org>`_
- - `Documentation wiki <https://www.mythtv.org/wiki>`_
- - `Mailing lists <https://lists.mythtv.org/mailman/listinfo>`_
- - `IRC <irc://freenode.net/mythtv-users>`_ at Freenode.net, #mythtv-users
-
+I will reimport upstream changes as needed, with a high priority on bugs that affect this build first, with features coming later.
 
