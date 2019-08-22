@@ -271,13 +271,8 @@ check_lib_cxx(){
 
 PLUGIN_LIST="
 archive
-browser
 gallery
-game
 music
-netvision
-news
-weather
 zoneminder
 zmserver
 "
@@ -342,9 +337,6 @@ Generic options:
 MythArchive related options:
   --enable-mytharchive     build the mytharchive plugin [$archive]
 
-MythBrowser related options:
-  --enable-mythbrowser     build the mythbrowser plugin [$browser]
-
 MythGallery related options:
   --enable-mythgallery     build the mythgallery plugin [$gallery]
   --enable-exif            enable reading of EXIF headers [$exif]
@@ -353,22 +345,10 @@ MythGallery related options:
   --icc-profile=PROFILE    ICC profile for dcraw decoding [$icc]
   --enable-opengl          enable OpenGL (MythGallery) [$opengl]
 
-MythGame related options:
-  --enable-mythgame        build the mythgame plugin [$game]
-
 MythMusic related options:
   --enable-mythmusic       build the mythmusic plugin [$music]
   --enable-fftw            enable fftw visualizers [$fftw]
   --enable-cdio            enable cd playback [$cdio]
-
-MythNetvision related options:
-  --enable-mythnetvision   build the mythnetvision plugin [$netvision]
-
-MythNews related options:
-  --enable-mythnews        build the mythnews plugin [$news]
-
-MythWeather related options:
-  --enable-mythweather     build the mythweather plugin [$weather]
 
 MythZoneMinder related options:
   --enable-mythzoneminder  build the mythzoneminder plugin [$zoneminder]
@@ -657,47 +637,6 @@ if enabled game; then
     fi
 fi
 
-if enabled netvision; then
-    disable_netvision(){
-        msg="$1"
-        echo "MythNetvision requires the $msg"
-        disable netvision
-    }
-
-    check_py_lib MythTV  || disable_netvision "MythTV Python bindings (MythTV)"
-    check_py_lib pycurl  || disable_netvision "Python pycurl library (pycurl)"
-    check_py_lib lxml    || disable_netvision "Python lxml library (lxml)"
-    check_py_lib xml     || disable_netvision "Python XML library (xml)"
-    check_py_lib urllib  || disable_netvision "Python URL library (urllib)"
-    check_py_lib urllib2 || disable_netvision "Python URL library 2 (urllib2)"
-    check_py_lib oauth   || disable_netvision "Python OAuth library (oauth)"
-
-    disabled netvision && echo "Disabling MythNetvision due to missing dependencies."
-fi
-
-if enabled weather; then
-    check_pl_lib(){
-        log check_pl_lib "$@"
-        check_cmd perl -e "use ${1};"
-    }
-
-    disable_weather(){
-        echo "MythWeather requires $1"
-        disable weather
-    }
-
-    check_pl_lib "Date::Manip"  || disable_weather "Date::Manip"
-    check_pl_lib "XML::Simple"  || disable_weather "XML::Simple"
-    check_pl_lib "XML::XPath"  || disable_weather "XML::XPath"
-    check_pl_lib "Image::Size"  || disable_weather "Image::Size"
-    check_pl_lib "DateTime::Format::ISO8601" ||
-        disable_weather "DateTime::Format::ISO8601"
-    check_pl_lib "SOAP::Lite"  || disable_weather "SOAP::Lite"
-    check_pl_lib "JSON"  || disable_weather "JSON"
-
-    disabled weather && echo "Disabling MythWeather due to missing dependencies."
-fi
-
 # Test for dcraw utility
 enabled dcraw && command -v dcraw 2>/dev/null > /dev/null || disable dcraw
 
@@ -797,13 +736,6 @@ else
   echo "        MythArchive    plugin will not be built"
 fi
 
-if enabled browser ; then
-  echo "        MythBrowser    plugin will be built"
-  echo "SUBDIRS += mythbrowser" >> ./config.pro
-else
-  echo "        MythBrowser    plugin will not be built"
-fi
-
 if enabled gallery ; then
   echo "        MythGallery    plugin will be built"
   echo "SUBDIRS += mythgallery" >> ./config.pro
@@ -811,39 +743,11 @@ else
   echo "        MythGallery    plugin will not be built"
 fi
 
-if enabled game ; then
-  echo "        MythGame       plugin will be built"
-  echo "SUBDIRS += mythgame" >> ./config.pro
-else
-  echo "        MythGame       plugin will not be built"
-fi
-
 if enabled music ; then
   echo "        MythMusic      plugin will be built"
   echo "SUBDIRS += mythmusic" >> ./config.pro
 else
   echo "        MythMusic      plugin will not be built"
-fi
-
-if enabled netvision ; then
-  echo "        MythNetvision  plugin will be built"
-  echo "SUBDIRS += mythnetvision" >> ./config.pro
-else
-  echo "        MythNetvision  plugin will not be built"
-fi
-
-if enabled news ; then
-  echo "        MythNews       plugin will be built"
-  echo "SUBDIRS += mythnews" >> ./config.pro
-else
-  echo "        MythNews       plugin will not be built"
-fi
-
-if enabled weather ; then
-  echo "        MythWeather    plugin will be built"
-  echo "SUBDIRS += mythweather" >> ./config.pro
-else
-  echo "        MythWeather    plugin will not be built"
 fi
 
 if enabled zoneminder ; then
@@ -945,21 +849,6 @@ if enabled gallery ; then
     else
         echo "        Dcraw          support will not be included in MythGallery"
     fi
-fi
-
-###########################################################
-#                                                         #
-#   MythGame related configuration options                #
-#                                                         #
-###########################################################
-
-if enabled game ; then
-
-    echo "/*" >  ./mythgame/mythgame/config.h
-    echo "    Automatically generated by configure - do not modify" >> ./mythgame/mythgame/config.h
-    echo "*/" >> ./mythgame/mythgame/config.h
-    echo "#define MINIZIP_UNZIP_H \"${MINIZIP_PREFIX}unzip.h\"" >> ./mythgame/mythgame/config.h
-
 fi
 
 ###########################################################
