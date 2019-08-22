@@ -6,6 +6,6 @@ These builds will have limited plugins as well with no web browser such as mythb
 
 I will reimport upstream changes as needed, with a high priority on bugs that affect this build first, with features coming later.
 
-![My image](kelsieflynn.github.com/ffretv/img/ffre)
+![My image](kelsieflynn.github.com/ffretv/img/ffretv.png)
 ![ffretv](https://github.com/kelsieflynn/ffretv/blob/master/ffretv.png)
 
