@@ -2754,23 +2754,23 @@ audio_alsa="default"
 audio_jack="default"
 
 enable audio_oss
-enable bindings_perl
-enable bindings_python
-enable bindings_php
+disable bindings_perl
+disable bindings_python
+disable bindings_php
 enable dvb
 enable ffmpeg_pthreads
-enable firewire
+disable firewire
 enable frontend
 enable hdhomerun
 enable vbox
-enable ceton
-enable hdpvr
-enable ivtv
+disable ceton
+disable hdpvr
+disable ivtv
 enable asi
 enable lamemp3
 enable libass
-enable libcec
-enable libcrypto
+disable libcec
+disable libcrypto
 enable libdns_sd
 enable libxml2
 enable lirc
@@ -2783,10 +2783,10 @@ enable mythtranscode
 enable opengl
 enable opengles
 enable opengl_video
-enable opengl_themepainter
+disable opengl_themepainter
 enable symbol_visibility
-enable v4l1
-enable v4l2
+disable v4l1
+disable v4l2
 enable x11
 enable xnvctrl
 enable xnvctrl_external
@@ -4911,6 +4911,8 @@ case $target_os in
 	if [ x`uname -m` = x"armv7l" ]; then
 	    disable vaapi
 	fi
+	prefix_default="/usr"
+	runprefix_default="/usr"
         ;;
     irix*)
         target_os=irix
