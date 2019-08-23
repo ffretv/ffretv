@@ -4,7 +4,7 @@ Fork and my personal subproject of mythtv that focuses on free tv or over the ai
 
 These builds will have limited plugins as well with no web browser such as mythbrower. QtWebkit support has been removed and anything depending on it may not work in these builds. TBD.
 
-I will reimport upstream changes as needed, with a high priority on bugs that affect this build first, with features coming later.
+I will reimport upstream changes as needed, with a high priority on bugs that affect this build first, with features coming later. I like mythtv upstream I just had the desire to have something less of an attempt at a full "convergence box". 
 
 
 
