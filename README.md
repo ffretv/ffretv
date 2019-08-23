@@ -15,7 +15,7 @@ I still have projects that are built around 0.28 so I will continue that until I
 
 *Once I get the basic setup here like I want it, I will start bringing in and testing my other projects. I will create them respectivaly as branches here.* 
 Git Commentary:
-*I can already tell now that I'm serious about learning the full git system, this is going to save me a huge amount of data and time in the future. It's a pretty sweet IDE like system, with intergrated deduplication, branching and lots more, and yeah I know whom made it orginally. Still its a great setup and I'm glad to FINALLY BE using it better.*
+*I can already tell now that I'm serious about learning the full git system, this is going to save me a huge amount of data and time in the future. It's a pretty sweet IDE like system, with intergrated deduplication-like storage, recovory/reverts from commits/branching and lots more, and yeah I know whom made it orginally. Still its a great setup and I'm glad to FINALLY BE using it better.*
 
 
 
