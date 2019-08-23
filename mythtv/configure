@@ -2369,7 +2369,6 @@ MYTHTV_CONFIG_LIST='
     opengl
     opengl_video
     opengl_themepainter
-    qtwebkit
     qtscript
     qtdbus
     sdl2
@@ -7529,17 +7528,6 @@ else
     qt_inc="-I${sysroot}/$(${qmake} -query QT_INSTALL_HEADERS)"
     qt_libs="-L${sysroot}/$(${qmake} -query QT_INSTALL_LIBS)"
 fi
-
-if $(pkg-config --exists Qt5WebKit) || $(pkg-config --exists QtWebKit) ; then
-    enable qtwebkit
-else
-    check_ecxx ${qt_inc} ${qt_inc}/QtCore <<EOF && enable qtwebkit
-#include <QtWebKit/QtWebKit>
-int main(void){ return 0; }
-EOF
-fi
-
-enabled qtwebkit || die "Error! QtWebkit headers not found"
 
 if $(pkg-config --exists Qt5Script) || $(pkg-config --exists QtScript) ; then
     enable qtscript
