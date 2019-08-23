@@ -11,7 +11,9 @@ I like mythtv upstream I just had the desire to have something less of an attemp
 
 What's currently going on with my branches?
 
-I still have projects that are built around 0.28 so I will continue that until I'm comfortble moving to the next release on those specfic projects. That being said, both 29.X and 31pre have been great for me in my testing. I expect to move to 29.x or just skip forward to 31pre with most all my projects soon. Keep in mind now I'm detached from upstream ast 31pre, and I will likely stay here for a bit between 0.28.X and <31pre.
+I still have projects that are built around 0.28 that I am moving to 0.29. Upstream has some great new code In that release I'm ready for now to impliment.
+
+All my 0.28 projects are now DEPRECATED!
 
 *Once I get the basic setup here like I want it, I will start bringing in and testing my other projects. I will create them respectivaly as branches here.* 
 Git Commentary:
