@@ -11,7 +11,8 @@ I like mythtv upstream I just had the desire to have something less of an attemp
 
 What's currently going on with my branches?
 
-I still have projects that are built around 0.28 that I am moving to 0.29. Upstream has some great new code In that release I'm ready for now to impliment.
+I have limited branches to maintain here:
+I play around with master/0.31pre but mostly my projects are just now moving to 0.29 Fixes.
 
 All my 0.28 projects are now DEPRECATED!
 
