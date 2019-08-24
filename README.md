@@ -13,8 +13,14 @@ What's currently going on with my branches?
 
 I have limited branches to maintain here:
 I play around with master/0.31pre but mostly my projects are just now moving to 0.29 Fixes.
-
-All my 0.28 projects are now DEPRECATED!
+This is where I forked with regards to 29.X
+```
+MythTV Version : v29.1
+Network Protocol : 91
+Library API : 29.20180316-1
+```
+*All my 0.28 projects are now DEPRECATED! While you may use them, I will rarely update them as 29.1 has a better feature set now with ffretv. A new setup introduced in 2016 allowed me to apply my "No WebKit" updated perfect. The new setup included a new method to pull progdetails instead of depending on mythbrowser. That solved a problem in the future a LOT.  Thanks to upstream makes 29.X enough reason to move
+to 29.1+. So far I dont see a downside.
 
 *Once I get the basic setup here like I want it, I will start bringing in and testing my other projects. I will create them respectivaly as branches here.* 
 Git Commentary:
