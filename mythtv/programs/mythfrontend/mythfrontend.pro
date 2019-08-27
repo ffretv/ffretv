@@ -2,15 +2,12 @@ include ( ../../settings.pro )
 include ( ../../version.pro )
 include ( ../programs-libs.pro )
 
-QT += network xml sql script
+QT += network xml sql script widgets
 mingw | win32-msvc* {
    # script debugger currently only enabled for WIN32 builds
    QT += scripttools
 }
-using_qtwebkit {
-    QT += widgets webkitwidgets
-    using_qtdbus: QT += dbus
-}
+using_qtdbus: QT += dbus
 
 TEMPLATE = app
 CONFIG += thread
