@@ -8282,6 +8282,7 @@ if enabled x11 ; then
     echo "OpenMAX Bellagio          ${openmax_bellagio-no}"
   fi
 fi
+  echo "OpenGL support            ${opengl-no}"
   echo "OpenGL video              ${opengl_video-no}"
   echo "OpenGL ThemePainter       ${opengl_themepainter-no}"
   if test x"$target_os" = x"darwin" ; then
