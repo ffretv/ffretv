@@ -7556,10 +7556,11 @@ EOF
     fi
 fi
 
+    #if test $target_os != android ; then
 # Disable OpenGL ES support if Qt does not support it
 QTCONF=$(pkg-config --variable=qt_config Qt5Core || pkg-config --variable=qt_config QtCore)
 if echo "$QTCONF" | grep -qv opengles2 ; then
-    if test $target_os != android ; then
+    if test [[ $target_os != android || !=linux ; then
         disable opengles
     fi
 fi
