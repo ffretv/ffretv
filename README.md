@@ -1,58 +1,89 @@
 ![ffretv](/ffretv.png)
 
-Fork and my personal subproject of mythtv that focuses on free tv or over the air tv support; as such, tuner type input device support will be fairly limited to "Digital terrestrial television"*1).
-
-ffretv will have limited plugins as well with no web browser such as mythbrower. QtWebkit support has been removed and anything depending on it may not work in these builds. TBD.
-
-arch support will be x86_64 and arm/aarch64. 
-
-I will reimport upstream changes as needed, with a high priority on bugs that affect this build first, with features coming later. 
-According to history*2) mythtv all along has been following the philosophy loyally of the original creator. Making a mythical convergence box into reality. I have nothing against mythtv proper at all in modern times, they do a lot. If upstream didnt exist I could have never created this lessor capable yet more free version. In the past I have had issues with them for ignoring somethings I felt important but its been 5 years since that, and most all those have been addressed since.
-I like mythtv upstream I just had the desire to have something less of an attempt at a full "convergence box", I'm going for more of the free limited version of a OTA DVR.  Seems every other company on the planet has a dvr now, so why not. I wanted this before, it just took me some time.
-
-
-What's currently going on with my branches?
-
-I have limited branches to maintain here:
-I play around with master/0.31pre but mostly my projects are just now moving to 0.29 Fixes.
-This is where I forked with regards to 29.X
-```
-MythTV Version : v29.1
-Network Protocol : 91
-Library API : 29.20180316-1
-```
-for Master its 31-pre with Lib API:
-```
-31.20190109-1
-```
-
-*All my 0.28 projects are now DEPRECATED! While you may use them, I will rarely update them as 29.1 has a better feature set now with ffretv. A new setup introduced in 2016 allowed me to apply my "No WebKit" updated perfect. The new setup included a new method to pull progdetails instead of depending on mythbrowser. That solved a problem in the future a LOT.  Thanks to upstream makes 29.X enough reason to move
-to 29.1+. So far I dont see a downside.
-
-*Once I get the basic setup here like I want it, I will start bringing in and testing my other projects. I will create them respectivaly as branches here.* 
-Git Commentary:
-*I can already tell now that I'm serious about learning the full git system, this is going to save me a huge amount of data and time in the future. It's a pretty sweet IDE like system, with intergrated deduplication-like storage, recovory/reverts from commits/branching and lots more, and yeah I know whom made it orginally. Still its a great setup and I'm glad to FINALLY BE using it better.*
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-*1)https://en.wikipedia.org/wiki/Digital_terrestrial_television
-
-*2)https://www.mythtv.org/wiki/User_Manual:Introduction
+ ldd /usr/local/bin/mythfrontend 
+	linux-vdso.so.1 =>  (0x00007ffd9aab2000)
+	libffreswscale.so.5 => /usr/local/lib/libffreswscale.so.5 (0x00007f293aa69000)
+	libffreavformat.so.58 => /usr/local/lib/libffreavformat.so.58 (0x00007f293a611000)
+	libffreswresample.so.3 => /usr/local/lib/libffreswresample.so.3 (0x00007f293a3f4000)
+	libffreavutil.so.56 => /usr/local/lib/libffreavutil.so.56 (0x00007f293a17c000)
+	libffreavcodec.so.58 => /usr/local/lib/libffreavcodec.so.58 (0x00007f2938b31000)
+	libffrepostproc.so.55 => /usr/local/lib/libffrepostproc.so.55 (0x00007f2938911000)
+	libffreavfilter.so.7 => /usr/local/lib/libffreavfilter.so.7 (0x00007f293843d000)
+	libmythtv-31.so.31 => /usr/local/lib/libmythtv-31.so.31 (0x00007f293763c000)
+	libmythupnp-31.so.31 => /usr/local/lib/libmythupnp-31.so.31 (0x00007f293731c000)
+	libmythbase-31.so.31 => /usr/local/lib/libmythbase-31.so.31 (0x00007f2936f19000)
+	libmythui-31.so.31 => /usr/local/lib/libmythui-31.so.31 (0x00007f2936a7e000)
+	libmyth-31.so.31 => /usr/local/lib/libmyth-31.so.31 (0x00007f29366b4000)
+	libmythmetadata-31.so.31 => /usr/local/lib/libmythmetadata-31.so.31 (0x00007f29362f1000)
+	libmythservicecontracts-31.so.31 => /usr/local/lib/libmythservicecontracts-31.so.31 (0x00007f2936067000)
+	libmythprotoserver-31.so.31 => /usr/local/lib/libmythprotoserver-31.so.31 (0x00007f2935e27000)
+	libmythfreemheg-31.so.31 => /usr/local/lib/libmythfreemheg-31.so.31 (0x00007f2935b86000)
+	libtag.so.1 => /lib64/libtag.so.1 (0x00007f2935897000)
+	libXNVCtrl.so.0 => /lib64/libXNVCtrl.so.0 (0x00007f2935691000)
+	libXext.so.6 => /lib64/libXext.so.6 (0x00007f293547f000)
+	libXinerama.so.1 => /lib64/libXinerama.so.1 (0x00007f293527c000)
+	libXxf86vm.so.1 => /lib64/libXxf86vm.so.1 (0x00007f2935076000)
+	libXv.so.1 => /lib64/libXv.so.1 (0x00007f2934e71000)
+	libXrandr.so.2 => /lib64/libXrandr.so.2 (0x00007f2934c66000)
+	libsystemd.so.0 => /lib64/libsystemd.so.0 (0x00007f2934a35000)
+	libvdpau.so.1 => /lib64/libvdpau.so.1 (0x00007f2934831000)
+	libX11.so.6 => /lib64/libX11.so.6 (0x00007f29344f3000)
+	libasound.so.2 => /lib64/libasound.so.2 (0x00007f29341f3000)
+	libfreetype.so.6 => /lib64/libfreetype.so.6 (0x00007f2933f34000)
+	libxml2.so.2 => /lib64/libxml2.so.2 (0x00007f2933bca000)
+	libdl.so.2 => /lib64/libdl.so.2 (0x00007f29339c6000)
+	libz.so.1 => /lib64/libz.so.1 (0x00007f29337b0000)
+	libsamplerate.so.0 => /lib64/libsamplerate.so.0 (0x00007f2933444000)
+	libpthread.so.0 => /lib64/libpthread.so.0 (0x00007f2933228000)
+	libGL.so.1 => /lib64/libGL.so.1 (0x00007f2932f9c000)
+	libQt5OpenGL.so.5 => /lib64/libQt5OpenGL.so.5 (0x00007f293ae8d000)
+	libQt5Widgets.so.5 => /lib64/libQt5Widgets.so.5 (0x00007f2932933000)
+	libQt5Gui.so.5 => /lib64/libQt5Gui.so.5 (0x00007f293247d000)
+	libQt5Network.so.5 => /lib64/libQt5Network.so.5 (0x00007f29322f5000)
+	libQt5Xml.so.5 => /lib64/libQt5Xml.so.5 (0x00007f293ae50000)
+	libQt5Sql.so.5 => /lib64/libQt5Sql.so.5 (0x00007f293ae0b000)
+	libQt5Script.so.5 => /lib64/libQt5Script.so.5 (0x00007f2932070000)
+	libQt5Core.so.5 => /lib64/libQt5Core.so.5 (0x00007f2931bc6000)
+	libstdc++.so.6 => /lib64/libstdc++.so.6 (0x00007f29318bf000)
+	libm.so.6 => /lib64/libm.so.6 (0x00007f29315bd000)
+	libgcc_s.so.1 => /lib64/libgcc_s.so.1 (0x00007f29313a7000)
+	libc.so.6 => /lib64/libc.so.6 (0x00007f2930fda000)
+	liblzma.so.5 => /lib64/liblzma.so.5 (0x00007f2930db4000)
+	liblzo2.so.2 => /lib64/liblzo2.so.2 (0x00007f2930b93000)
+	libexiv2.so.26 => /lib64/libexiv2.so.26 (0x00007f29306a4000)
+	libXrender.so.1 => /lib64/libXrender.so.1 (0x00007f2930499000)
+	libcap.so.2 => /lib64/libcap.so.2 (0x00007f2930294000)
+	librt.so.1 => /lib64/librt.so.1 (0x00007f293008c000)
+	libselinux.so.1 => /lib64/libselinux.so.1 (0x00007f292fe65000)
+	liblz4.so.1 => /lib64/liblz4.so.1 (0x00007f292fc50000)
+	libgcrypt.so.11 => /lib64/libgcrypt.so.11 (0x00007f292f9cf000)
+	libgpg-error.so.0 => /lib64/libgpg-error.so.0 (0x00007f292f7ca000)
+	libresolv.so.2 => /lib64/libresolv.so.2 (0x00007f292f5b1000)
+	libdw.so.1 => /lib64/libdw.so.1 (0x00007f292f362000)
+	/lib64/ld-linux-x86-64.so.2 (0x00007f293acf3000)
+	libxcb.so.1 => /lib64/libxcb.so.1 (0x00007f292f13a000)
+	libbz2.so.1 => /lib64/libbz2.so.1 (0x00007f292ef2a000)
+	libpng15.so.15 => /lib64/libpng15.so.15 (0x00007f292ecff000)
+	libGLX.so.0 => /lib64/libGLX.so.0 (0x00007f292eacd000)
+	libGLdispatch.so.0 => /lib64/libGLdispatch.so.0 (0x00007f292e817000)
+	libharfbuzz.so.0 => /lib64/libharfbuzz.so.0 (0x00007f292e579000)
+	libssl.so.10 => /lib64/libssl.so.10 (0x00007f292e307000)
+	libcrypto.so.10 => /lib64/libcrypto.so.10 (0x00007f292dea5000)
+	libicui18n.so.50 => /lib64/libicui18n.so.50 (0x00007f292daa6000)
+	libicuuc.so.50 => /lib64/libicuuc.so.50 (0x00007f292d72d000)
+	libicudata.so.50 => /lib64/libicudata.so.50 (0x00007f292c15b000)
+	libpcre2-16.so.0 => /lib64/libpcre2-16.so.0 (0x00007f292beef000)
+	libgthread-2.0.so.0 => /lib64/libgthread-2.0.so.0 (0x00007f292bced000)
+	libglib-2.0.so.0 => /lib64/libglib-2.0.so.0 (0x00007f292b9d7000)
+	libexpat.so.1 => /lib64/libexpat.so.1 (0x00007f292b7ad000)
+	libattr.so.1 => /lib64/libattr.so.1 (0x00007f292b5a8000)
+	libpcre.so.1 => /lib64/libpcre.so.1 (0x00007f292b346000)
+	libelf.so.1 => /lib64/libelf.so.1 (0x00007f292b12e000)
+	libXau.so.6 => /lib64/libXau.so.6 (0x00007f292af2a000)
+	libgraphite2.so.3 => /lib64/libgraphite2.so.3 (0x00007f292acfc000)
+	libgssapi_krb5.so.2 => /lib64/libgssapi_krb5.so.2 (0x00007f292aaaf000)
+	libkrb5.so.3 => /lib64/libkrb5.so.3 (0x00007f292a7c6000)
+	libcom_err.so.2 => /lib64/libcom_err.so.2 (0x00007f292a5c2000)
+	libk5crypto.so.3 => /lib64/libk5crypto.so.3 (0x00007f292a38f000)
+	libkrb5support.so.0 => /lib64/libkrb5support.so.0 (0x00007f292a17f000)
+	libkeyutils.so.1 => /lib64/libkeyutils.so.1 (0x00007f2929f7b000)
