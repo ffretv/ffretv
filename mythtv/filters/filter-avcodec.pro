@@ -1,9 +1,9 @@
 # A few filters use routines from libavcodec. Include this in their .pro file
 
-LIBS += -L../../external/FFmpeg/libswresample -lmythswresample
-LIBS += -L../../external/FFmpeg/libavutil  -lmythavutil
-LIBS += -L../../external/FFmpeg/libavcodec -lmythavcodec
-LIBS += -L../../external/FFmpeg/libavformat  -lmythavformat
+LIBS += -L../../external/FFmpeg/libswresample -lffreswresample
+LIBS += -L../../external/FFmpeg/libavutil  -lffreavutil
+LIBS += -L../../external/FFmpeg/libavcodec -lffreavcodec
+LIBS += -L../../external/FFmpeg/libavformat  -lffreavformat
 
 # Rebuild (link) this filter if the lib changes
 POST_TARGETDEPS += ../../external/FFmpeg/libswresample/$$avLibName(swresample)

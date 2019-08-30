@@ -932,7 +932,7 @@ win32-msvc* {
 # Have them at the end in order to properly resolve on mingw platform
 # where the order is of significance
 LIBS += -L../libmyth
-LIBS += -L../../external/FFmpeg/libswresample -lmythswresample
+LIBS += -L../../external/FFmpeg/libswresample -lffreswresample
 LIBS += -L../../external/FFmpeg/libavutil
 LIBS += -L../../external/FFmpeg/libavcodec
 LIBS += -L../../external/FFmpeg/libavformat
@@ -943,12 +943,12 @@ LIBS += -L../libmythui -L../libmythupnp
 LIBS += -L../libmythbase
 LIBS += -L../libmythservicecontracts
 LIBS += -lmyth-$$LIBVERSION
-LIBS += -lmythswscale
-LIBS += -lmythavformat
-LIBS += -lmythavcodec
-LIBS += -lmythavutil
-LIBS += -lmythpostproc
-LIBS += -lmythavfilter
+LIBS += -lffreswscale
+LIBS += -lffreavformat
+LIBS += -lffreavcodec
+LIBS += -lffreavutil
+LIBS += -lffrepostproc
+LIBS += -lffreavfilter
 LIBS += -lmythui-$$LIBVERSION       -lmythupnp-$$LIBVERSION
 LIBS += -lmythbase-$$LIBVERSION
 LIBS += -lmythservicecontracts-$$LIBVERSION

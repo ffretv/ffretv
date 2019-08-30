@@ -1096,13 +1096,13 @@ typedef struct AVStream {
     int nb_index_entries;
     unsigned int index_entries_allocated_size;
 
-    /* mythtv addons */
+    /* ffretv addons */
     int got_frame;
 
-    int component_tag; ///< Component tag given in PMT, for MythTV MHEG
+    int component_tag; ///< Component tag given in PMT, for FFreTV MHEG
     int carousel_id;
     int data_id;
-    /* end mythtv addons */
+    /* end ffretv addons */
 
     /**
      * Stream Identifier
@@ -1469,7 +1469,7 @@ typedef struct AVFormatContext {
     unsigned int packet_size;
     int max_delay;
 
-    /* Myth addons */
+    /* FFre addons */
     int build_index;
 
     /* mpeg-ts support */
@@ -1477,7 +1477,7 @@ typedef struct AVFormatContext {
     void *stream_change_data;
     const uint8_t *cur_pmt_sect;
     int cur_pmt_sect_len;
-    /* End Myth addons */
+    /* End FFre addons */
 
     /**
      * Flags modifying the (de)muxer behaviour. A combination of AVFMT_FLAG_*.
@@ -3096,7 +3096,7 @@ int avformat_transfer_internal_stream_timing_info(const AVOutputFormat *ofmt,
  */
 AVRational av_stream_get_codec_timebase(const AVStream *st);
 
-/* MythTV changes */
+/* FFreTV changes */
 
 #define MAX_STREAMS 100
 
@@ -3105,7 +3105,7 @@ void av_estimate_timings(AVFormatContext *ic, int64_t old_offset);
 AVStream *av_add_stream(AVFormatContext *s, AVStream *st, int id);
 void av_remove_stream(AVFormatContext *s, int id, int remove_ts);
 void flush_packet_queue(AVFormatContext *s);
-/* End MythTV changes */
+/* End FFreTV changes */
 
 /**
  * @}

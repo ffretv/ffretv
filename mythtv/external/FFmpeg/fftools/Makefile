@@ -4,9 +4,9 @@ AVPROGS-$(CONFIG_FFPROBE)  += ffprobe
 
 AVPROGS     := $(AVPROGS-yes:%=%$(PROGSSUF)$(EXESUF))
 PROGS       += $(AVPROGS)
-MYTHPROGS   = $(addprefix myth, ${PROGS})
-MYTHFFLIBS  = -lmythavfilter -lmythavformat -lmythavcodec -lmythavresample \
--lmythpostproc -lmythswresample -lmythswscale
+FFREPROGS   = $(addprefix ffre, ${PROGS})
+FFREFFLIBS  = -lffreavfilter -lffreavformat -lffreavcodec -lffreavresample \
+-lffrepostproc -lffreswresample -lffreswscale
 
 AVBASENAMES  = ffmpeg ffplay ffprobe
 ALLAVPROGS   = $(AVBASENAMES:%=%$(PROGSSUF)$(EXESUF))
@@ -37,21 +37,21 @@ all: $(AVPROGS)
 fftools/ffprobe.o fftools/cmdutils.o: libavutil/ffversion.h | fftools
 OBJDIRS += fftools
 
-# ${MYTHPROGS}:
-mythffmpeg:
-	cp ffmpeg_g mythffmpeg
+# ${FFREPROGS}:
+ffreffmpeg:
+	cp ffmpeg_g ffreffmpeg
 
-mythffprobe:
-	cp ffprobe_g mythffprobe
+ffreffprobe:
+	cp ffprobe_g ffreffprobe
 
-mythffserver:
-	cp ffserver_g mythffserver
+ffreffserver:
+	cp ffserver_g ffreffserver
 
-mythffplay:
-	cp ffplay_g mythffplay
+ffreffplay:
+	cp ffplay_g ffreffplay
 
 ifdef AVPROGS
-install: install-mythprogs
+install: install-ffreprogs
 
 endif
 
@@ -62,9 +62,9 @@ install-progs: install-progs-yes $(AVPROGS)
 	$(Q)mkdir -p "$(BINDIR)"
 	$(INSTALL) -c -m 755 $(AVPROGS) "$(BINDIR)"
 
-install-mythprogs: install-progs-yes $(MYTHPROGS)
+install-ffreprogs: install-progs-yes $(FFREPROGS)
 	$(Q)mkdir -p "$(BINDIR)"
-	$(INSTALL) -c -m 755 $(MYTHPROGS) "$(BINDIR)"
+	$(INSTALL) -c -m 755 $(FFREPROGS) "$(BINDIR)"
 
 uninstall: uninstall-progs
 

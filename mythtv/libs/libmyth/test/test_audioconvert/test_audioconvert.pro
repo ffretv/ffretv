@@ -12,10 +12,10 @@ LIBS += -L../../../libmythbase -lmythbase-$$LIBVERSION
 LIBS += -L../../../libmythui -lmythui-$$LIBVERSION
 LIBS += -L../../../libmythupnp -lmythupnp-$$LIBVERSION
 LIBS += -L../../../libmythservicecontracts -lmythservicecontracts-$$LIBVERSION
-LIBS += -L../../../../external/FFmpeg/libswresample -lmythswresample
-LIBS += -L../../../../external/FFmpeg/libavutil -lmythavutil
-LIBS += -L../../../../external/FFmpeg/libavcodec -lmythavcodec
-LIBS += -L../../../../external/FFmpeg/libavformat -lmythavformat
+LIBS += -L../../../../external/FFmpeg/libswresample -lffreswresample
+LIBS += -L../../../../external/FFmpeg/libavutil -lffreavutil
+LIBS += -L../../../../external/FFmpeg/libavcodec -lffreavcodec
+LIBS += -L../../../../external/FFmpeg/libavformat -lffreavformat
 LIBS += -L../.. -lmyth-$$LIBVERSION
 
 contains(QMAKE_CXX, "g++") {

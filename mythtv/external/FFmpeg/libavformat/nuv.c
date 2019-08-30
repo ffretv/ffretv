@@ -44,14 +44,14 @@ typedef enum {
     NUV_EXTRADATA = 'D',
     NUV_AUDIO     = 'A',
     NUV_SEEKP     = 'R',
-    NUV_MYTHEXT   = 'X'
+    NUV_FFREEXT   = 'X'
 } nuv_frametype;
 
 static int nuv_probe(AVProbeData *p)
 {
     if (!memcmp(p->buf, "NuppelVideo", 12))
         return AVPROBE_SCORE_MAX;
-    if (!memcmp(p->buf, "MythTVVideo", 12))
+    if (!memcmp(p->buf, "FFreTVVideo", 12))
         return AVPROBE_SCORE_MAX;
     return 0;
 }
@@ -63,15 +63,15 @@ static int nuv_probe(AVProbeData *p)
  * @brief read until we found all data needed for decoding
  * @param vst video stream of which to change parameters
  * @param ast video stream of which to change parameters
- * @param myth set if this is a MythTVVideo format file
+ * @param ffre set if this is a FFreTVVideo format file
  * @return 0 or AVERROR code
  */
 static int get_codec_data(AVFormatContext *s, AVIOContext *pb, AVStream *vst,
-                          AVStream *ast, int myth)
+                          AVStream *ast, int ffre)
 {
     nuv_frametype frametype;
 
-    if (!vst && !myth)
+    if (!vst && !ffre)
         return 1; // no codec data needed
     while (!avio_feof(pb)) {
         int size, subtype;
@@ -90,11 +90,11 @@ static int get_codec_data(AVFormatContext *s, AVIOContext *pb, AVStream *vst,
                 if (ff_get_extradata(NULL, vst->codecpar, pb, size) < 0)
                     return AVERROR(ENOMEM);
                 size = 0;
-                if (!myth)
+                if (!ffre)
                     return 0;
             }
             break;
-        case NUV_MYTHEXT:
+        case NUV_FFREEXT:
             avio_skip(pb, 7);
             size = PKTSIZE(avio_rl32(pb));
             if (size != 128 * 4)
@@ -159,11 +159,11 @@ static int nuv_header(AVFormatContext *s)
     AVIOContext *pb = s->pb;
     char id_string[12];
     double aspect, fps;
-    int is_mythtv, width, height, v_packs, a_packs, ret;
+    int is_ffretv, width, height, v_packs, a_packs, ret;
     AVStream *vst = NULL, *ast = NULL;
 
     avio_read(pb, id_string, 12);
-    is_mythtv = !memcmp(id_string, "MythTVVideo", 12);
+    is_ffretv = !memcmp(id_string, "FFreTVVideo", 12);
     avio_skip(pb, 5);       // version string
     avio_skip(pb, 3);       // padding
     width  = avio_rl32(pb);
@@ -236,7 +236,7 @@ static int nuv_header(AVFormatContext *s)
     } else
         ctx->a_id = -1;
 
-    if ((ret = get_codec_data(s, pb, vst, ast, is_mythtv)) < 0)
+    if ((ret = get_codec_data(s, pb, vst, ast, is_ffretv)) < 0)
         return ret;
 
     ctx->rtjpg_video = vst && vst->codecpar->codec_id == AV_CODEC_ID_NUV;

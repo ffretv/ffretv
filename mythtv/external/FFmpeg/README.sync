@@ -5,28 +5,28 @@ git://source.ffmpeg.org/ffmpeg.git at n3.0-3-gb80083a on February 26th, 2016 (jy
 git://source.ffmpeg.org/ffmpeg.git at n3.2-3-g7568b0f on November 14th, 2016 (jya) (release/3.2 branch, release 3.2)
 git://source.ffmpeg.org/ffmpeg.git at n3.4.1-5-g4a53ecb on February 5th, 2018 (Peter Bennett) (release/3.4 branch, release 3.4.1)
 
-As of May 22 2018 we resync the code to the MythTV fork of FFmpeg (git@github.com:MythTV/FFmpeg.git).
+As of May 22 2018 we resync the code to the ffreTV fork of FFmpeg (git@github.com:ffreTV/FFmpeg.git).
 All changes to the FFmpeg code must be made in that repository, master branch and cherry-picked to release branch currently in use.
 
-git@github.com:MythTV/FFmpeg.git at n4.0-43-ge4e7472e73 on May 24, 2018 (release/4.0 branch) 
+git@github.com:ffreTV/FFmpeg.git at n4.0-43-ge4e7472e73 on May 24, 2018 (release/4.0 branch) 
 git@github.com:FFmpeg/FFmpeg.git at n4.0-39-gda399903c7 (Peter Bennett)
 
 Procedure for FFmpeg resync
 ===========================
 
-- In your MytTV/mythtv clone, master branch, get up to date
+- In your MytTV/ffretv clone, master branch, get up to date
 git pull
-- Clone MythTV FFmpeg fork into a new directory:
-git clone git@github.com:MythTV/FFmpeg.git
+- Clone ffreTV FFmpeg fork into a new directory:
+git clone git@github.com:ffreTV/FFmpeg.git
 - create a branch to track the current ffmpeg release branch (e.g release/4.0)
 - Add a remote for main FFmpeg
 git remote add ffmpeg git@github.com:FFmpeg/FFmpeg.git
 git fetch ffmpeg
-- Look for any changes that are in MythTV FFmpeg since last sync.
-  In your mythtv directory.
-git log mythtv/external/FFmpeg/
-- If the log contains any changes check if they are in the MythTV/FFmpeg repository
-  and if not commit them into MythTV/FFmpeg/master and cherry-pick them into the 
+- Look for any changes that are in ffreTV FFmpeg since last sync.
+  In your ffretv directory.
+git log ffretv/external/FFmpeg/
+- If the log contains any changes check if they are in the ffreTV/FFmpeg repository
+  and if not commit them into ffreTV/FFmpeg/master and cherry-pick them into the 
   current release branch (e.g. release/4.0).
 - Check for a new branch. From FFmpeg clone directory:
 git branch -a
@@ -58,15 +58,15 @@ git branch -a
   git checkout release/x.x
   git merge ffmpeg/release/x.x
 
-- Checkout release/x.x and in MythTV directory checkout master.
-- Delete entire FFmpeg directory structure from MythTV directory and copy
+- Checkout release/x.x and in ffreTV directory checkout master.
+- Delete entire FFmpeg directory structure from ffreTV directory and copy
   in the contents of the ffmpeg repository (except for the .git directory).
-- Test MythTV build and playback.
+- Test ffreTV build and playback.
 - Add and commit all changes with comments identifying
   ffmpeg/FFmpeg Release/x.x description (git describe)
-  MythTV/FFmpeg Release/x.x description (git describe).
+  ffreTV/FFmpeg Release/x.x description (git describe).
 
-- Push all branches you updated to MythTV/FFmpeg
+- Push all branches you updated to ffreTV/FFmpeg
 
 This file (README.sync) will no longer contain details of each FFmpeg resync
 
@@ -100,7 +100,7 @@ List of files modified from original FFmpeg:
 	modified:   libavcodec/mpegvideo.h
 	modified:   libavcodec/pcm.c
 	modified:   libavcodec/pgssubdec.c
-	new file:   libavcodec/utils-mythtv.c
+	new file:   libavcodec/utils-ffretv.c
 	modified:   libavdevice/opengl_enc.c
 	modified:   libavformat/Makefile
 	modified:   libavformat/allformats.c
@@ -111,14 +111,14 @@ List of files modified from original FFmpeg:
 	modified:   libavformat/mov.c
 	modified:   libavformat/mpeg.c
 	modified:   libavformat/mpeg.h
-	new file:   libavformat/mpegts-mythtv.c
-	new file:   libavformat/mpegts-mythtv.h
+	new file:   libavformat/mpegts-ffretv.c
+	new file:   libavformat/mpegts-ffretv.h
 	modified:   libavformat/mpegts.c
 	modified:   libavformat/mpegts.h
 	modified:   libavformat/os_support.h
 	modified:   libavformat/rtpdec_mpegts.c
 	modified:   libavformat/rtsp.c
-	new file:   libavformat/utils-mythtv.c
+	new file:   libavformat/utils-ffretv.c
 	modified:   libavformat/utils.c
 	modified:   libavformat/wtvdec.c
 	modified:   libavutil/frame.c

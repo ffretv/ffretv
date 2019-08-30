@@ -3567,9 +3567,9 @@ logfile="ffbuild/config.log"
 # installation paths
 prefix_default="/usr/local"
 bindir_default='${prefix}/bin'
-datadir_default='${prefix}/share/mythtv'
+datadir_default='${prefix}/share/ffretv'
 docdir_default='${prefix}/share/doc/ffmpeg'
-incdir_default='${prefix}/include/mythtv'
+incdir_default='${prefix}/include/ffretv'
 libdir_default='${prefix}/lib'
 mandir_default='${prefix}/share/man'
 
@@ -3636,11 +3636,11 @@ disable $EXTERNAL_LIBRARY_LIST $HWACCEL_LIBRARY_LIST
 
 # build settings
 SHFLAGS='-shared -Wl,-soname,$$(@F)'
-LIBPREF="libmyth"
+LIBPREF="libffre"
 LIBSUF=".a"
 FULLNAME='$(NAME)$(BUILDSUF)'
 LIBNAME='$(LIBPREF)$(FULLNAME)$(LIBSUF)'
-SLIBPREF="libmyth"
+SLIBPREF="libffre"
 SLIBSUF=".so"
 SLIBNAME='$(SLIBPREF)$(FULLNAME)$(SLIBSUF)'
 SLIBNAME_WITH_VERSION='$(SLIBNAME).$(LIBVERSION)'
@@ -3667,7 +3667,7 @@ OBJCC_O='-o $@'
 X86ASM_O='-o $@'
 LD_O='-o $@'
 LD_LIB='-l%'
-LD_MYTH_LIB='-lmyth%'
+LD_FFRE_LIB='-lffre%'
 LD_PATH='-L'
 HOSTCC_C='-c'
 HOSTCC_E='-E -o $@'
@@ -7160,7 +7160,7 @@ NVCC_O=$NVCC_O
 LD_O=$LD_O
 X86ASM_O=$X86ASM_O
 LD_LIB=$LD_LIB
-LD_MYTH_LIB=$LD_MYTH_LIB
+LD_FFRE_LIB=$LD_FFRE_LIB
 LD_PATH=$LD_PATH
 DLLTOOL=$dlltool
 WINDRES=$windres

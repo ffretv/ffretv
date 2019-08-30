@@ -48,13 +48,13 @@ contains (QMAKE_LIBDIR_POST, /usr/local/lib) {
   LIBS += -L/usr/local/lib
 }
 
-LIBS += -lmythswscale
-LIBS += -lmythavformat
-LIBS += -lmythswresample
-LIBS += -lmythavutil
-LIBS += -lmythavcodec
-LIBS += -lmythpostproc
-LIBS += -lmythavfilter
+LIBS += -lffreswscale
+LIBS += -lffreavformat
+LIBS += -lffreswresample
+LIBS += -lffreavutil
+LIBS += -lffreavcodec
+LIBS += -lffrepostproc
+LIBS += -lffreavfilter
 LIBS += -lmythtv-$$LIBVERSION
 LIBS += -lmythupnp-$$LIBVERSION
 LIBS += -lmythbase-$$LIBVERSION

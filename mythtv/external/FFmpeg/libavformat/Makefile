@@ -23,7 +23,7 @@ OBJS = allformats.o         \
        sdp.o                \
        url.o                \
        utils.o              \
-       utils-mythtv.o       \
+       utils-ffretv.o       \
 
 OBJS-$(HAVE_LIBC_MSVCRT)                 += file_open.o
 
@@ -321,7 +321,7 @@ OBJS-$(CONFIG_MPEG2SVCD_MUXER)           += mpegenc.o
 OBJS-$(CONFIG_MPEG2VIDEO_MUXER)          += rawenc.o
 OBJS-$(CONFIG_MPEG2VOB_MUXER)            += mpegenc.o
 OBJS-$(CONFIG_MPEGPS_DEMUXER)            += mpeg.o
-OBJS-$(CONFIG_MPEGTS_DEMUXER)            += mpegts-mythtv.o
+OBJS-$(CONFIG_MPEGTS_DEMUXER)            += mpegts-ffretv.o
 OBJS-$(CONFIG_MPEGTS_DEMUXER)            += mpegts.o
 OBJS-$(CONFIG_MPEGTS_MUXER)              += mpegtsenc.o
 OBJS-$(CONFIG_MPEGVIDEO_DEMUXER)         += mpegvideodec.o rawdec.o
