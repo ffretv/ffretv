@@ -1,7 +1,10 @@
 ![ffretv](/ffretv.png)
 
 Forkin. Stage1
+I had to finish manually linking this up so dont waste your time tyring to bother with this yet. I have to change several options in the qt .pro files and configure. Once I get it all renamed(could take months, a little a a time) then it will be
+more fun to work with, 
 
+**Right now this is my ffrefrankenMyth :)**
 
 ```
  ldd /usr/local/bin/mythfrontend 
