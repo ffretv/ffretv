@@ -93,7 +93,81 @@ Forkin. Stage1
 	libkeyutils.so.1 => /lib64/libkeyutils.so.1 (0x00007f2929f7b000)
 ```
 ```
-readelf -d /usr/bin/mythfrontend 
+export LD_LIBRARY_PATH=/usr/local/lib
+
+readelf -d /usr/local/bin/mythfrontend
+
+Dynamic section at offset 0x3aa728 contains 69 entries:
+  Tag        Type                         Name/Value
+ 0x0000000000000001 (NEEDED)             Shared library: [libffreswscale.so.5]
+ 0x0000000000000001 (NEEDED)             Shared library: [libffreavformat.so.58]
+ 0x0000000000000001 (NEEDED)             Shared library: [libffreswresample.so.3]
+ 0x0000000000000001 (NEEDED)             Shared library: [libffreavutil.so.56]
+ 0x0000000000000001 (NEEDED)             Shared library: [libffreavcodec.so.58]
+ 0x0000000000000001 (NEEDED)             Shared library: [libffrepostproc.so.55]
+ 0x0000000000000001 (NEEDED)             Shared library: [libffreavfilter.so.7]
+ 0x0000000000000001 (NEEDED)             Shared library: [libmythtv-31.so.31]
+ 0x0000000000000001 (NEEDED)             Shared library: [libmythupnp-31.so.31]
+ 0x0000000000000001 (NEEDED)             Shared library: [libmythbase-31.so.31]
+ 0x0000000000000001 (NEEDED)             Shared library: [libmythui-31.so.31]
+ 0x0000000000000001 (NEEDED)             Shared library: [libmyth-31.so.31]
+ 0x0000000000000001 (NEEDED)             Shared library: [libmythmetadata-31.so.31]
+ 0x0000000000000001 (NEEDED)             Shared library: [libmythservicecontracts-31.so.31]
+ 0x0000000000000001 (NEEDED)             Shared library: [libmythprotoserver-31.so.31]
+ 0x0000000000000001 (NEEDED)             Shared library: [libmythfreemheg-31.so.31]
+ 0x0000000000000001 (NEEDED)             Shared library: [libtag.so.1]
+ 0x0000000000000001 (NEEDED)             Shared library: [libXNVCtrl.so.0]
+ 0x0000000000000001 (NEEDED)             Shared library: [libXext.so.6]
+ 0x0000000000000001 (NEEDED)             Shared library: [libXinerama.so.1]
+ 0x0000000000000001 (NEEDED)             Shared library: [libXxf86vm.so.1]
+ 0x0000000000000001 (NEEDED)             Shared library: [libXv.so.1]
+ 0x0000000000000001 (NEEDED)             Shared library: [libXrandr.so.2]
+ 0x0000000000000001 (NEEDED)             Shared library: [libsystemd.so.0]
+ 0x0000000000000001 (NEEDED)             Shared library: [libvdpau.so.1]
+ 0x0000000000000001 (NEEDED)             Shared library: [libX11.so.6]
+ 0x0000000000000001 (NEEDED)             Shared library: [libasound.so.2]
+ 0x0000000000000001 (NEEDED)             Shared library: [libfreetype.so.6]
+ 0x0000000000000001 (NEEDED)             Shared library: [libxml2.so.2]
+ 0x0000000000000001 (NEEDED)             Shared library: [libdl.so.2]
+ 0x0000000000000001 (NEEDED)             Shared library: [libz.so.1]
+ 0x0000000000000001 (NEEDED)             Shared library: [libsamplerate.so.0]
+ 0x0000000000000001 (NEEDED)             Shared library: [libpthread.so.0]
+ 0x0000000000000001 (NEEDED)             Shared library: [libGL.so.1]
+ 0x0000000000000001 (NEEDED)             Shared library: [libQt5OpenGL.so.5]
+ 0x0000000000000001 (NEEDED)             Shared library: [libQt5Widgets.so.5]
+ 0x0000000000000001 (NEEDED)             Shared library: [libQt5Gui.so.5]
+ 0x0000000000000001 (NEEDED)             Shared library: [libQt5Network.so.5]
+ 0x0000000000000001 (NEEDED)             Shared library: [libQt5Xml.so.5]
+ 0x0000000000000001 (NEEDED)             Shared library: [libQt5Sql.so.5]
+ 0x0000000000000001 (NEEDED)             Shared library: [libQt5Script.so.5]
+ 0x0000000000000001 (NEEDED)             Shared library: [libQt5Core.so.5]
+ 0x0000000000000001 (NEEDED)             Shared library: [libstdc++.so.6]
+ 0x0000000000000001 (NEEDED)             Shared library: [libm.so.6]
+ 0x0000000000000001 (NEEDED)             Shared library: [libgcc_s.so.1]
+ 0x0000000000000001 (NEEDED)             Shared library: [libc.so.6]
+ 0x000000000000000c (INIT)               0x45ed00
+ 0x000000000000000d (FINI)               0x6da034
+ 0x0000000000000019 (INIT_ARRAY)         0x99c1b0
+ 0x000000000000001b (INIT_ARRAYSZ)       224 (bytes)
+ 0x000000000000001a (FINI_ARRAY)         0x99c290
+ 0x000000000000001c (FINI_ARRAYSZ)       8 (bytes)
+ 0x000000006ffffef5 (GNU_HASH)           0x400298
+ 0x0000000000000005 (STRTAB)             0x417bf0
+ 0x0000000000000006 (SYMTAB)             0x403718
+ 0x000000000000000a (STRSZ)              171949 (bytes)
+ 0x000000000000000b (SYMENT)             24 (bytes)
+ 0x0000000000000015 (DEBUG)              0x0
+ 0x0000000000000003 (PLTGOT)             0x9ab000
+ 0x0000000000000002 (PLTRELSZ)           33408 (bytes)
+ 0x0000000000000014 (PLTREL)             RELA
+ 0x0000000000000017 (JMPREL)             0x456a80
+ 0x0000000000000007 (RELA)               0x4438b0
+ 0x0000000000000008 (RELASZ)             78288 (bytes)
+ 0x0000000000000009 (RELAENT)            24 (bytes)
+ 0x000000006ffffffe (VERNEED)            0x4436b0
+ 0x000000006fffffff (VERNEEDNUM)         13
+ 0x000000006ffffff0 (VERSYM)             0x441b9e
+ 0x0000000000000000 (NULL)               0x0
 
 
 ```
