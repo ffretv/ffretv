@@ -5,9 +5,9 @@ I had to finish manually linking this up so dont waste your time tyring to bothe
 more fun to work with. 
 
 **Right now this is my ffrefrankenMyth :)**
-*I'm taking apart a 35K commit project thats over 17 years old, it's got some things laying around, I though my desk/table was crazy.*
-
-
+*I'm taking apart a 35K commit project thats over 17 years old, it's got some things laying around. So expect 
+me to take a while on this full renaming venture. I've done this before several times without GIT and it was not
+easy or fast.
 
 ```
  ldd /usr/local/bin/mythfrontend 
