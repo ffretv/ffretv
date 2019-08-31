@@ -26,7 +26,7 @@ If your HDHR Transcode options are set to mobile or lower, you will have wee lil
 
 **I'm going to speculate here that without extreme optimizations on the pizeros, it will not work well, not enough raspberries
 at high enough a rate :)** 
-Translation for the less creative: 1 core rpi too slow at even oc'd 1.1Ghz speeds. That being said, if you really want it to work fast&easy, I'm sure if immersed in liguid nitrogen oc'd at 1.5Ghz , it would then work, until something cracks and busts :)
+Translation for the less creative: 1 core rpi too slow at even oc'd 1.1Ghz speeds. That being said, if you really want it to work fast&easy, I'm sure if immersed in gaseous nitrogen(NO NOT PLASMA) oc'd at 1.5Ghz , it would then work, until something cracks and busts :)
 
 ![2](./IMG_2408.jpg)
 
