@@ -1,3 +1,6 @@
+![ffretv](/ffretv.png)
+
+
 The rpi zero build/arm6 still isnt ready yet, its too slow for HD, works okay for SD,except the startup time is
 too slow.
 Buffers in mythv somehow interfering? OMXplayer with much lower overhead can play just about anything directy to GPU, including the
@@ -12,4 +15,4 @@ with regards to the arm6 and pizero builds.
 
 
 
-![](/ffretv.png)
+![1](./IMG_2396.jpg)
