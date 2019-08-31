@@ -16,3 +16,12 @@ with regards to the arm6 and pizero builds.
 
 
 ![1](./IMG_2396.jpg)
+
+
+
+![2](./IMG_2408.jpg)
+
+
+
+![3](./IMG_2410.jpg)
+
