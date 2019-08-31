@@ -20,18 +20,23 @@ If your HDHR Transcode options are set to mobile or lower, you will have wee lil
 **Back to my main point, the rpi2 will be ffretv-nox ready soon with fixes/29, the pizeros are not READY to spin a build.**
 
 
-
-I was thinking again, I know its a bad habit but I enjoy it! So , you could use the rpizero as a low power backend
-and use mythtv and omxplayer along with cp's mythlink.pl. I've used it in the past to make nice labeled links that i could browse then on my phone. Back to point, you can use it with mythvideo as an alternate player and use omxplayer as the alternate player. Then you can record and use the mythtv/ffretv interface but for playback use mythvideo and you can have delayed livetv that way with a little work. The cool thing is the SD cards for 100G have come down in price and still are going down as the larger capacities come out. Sure they are going to wear out but you can use them for several years by using XFS and always keep reserved space so when errors occur the firmware can move data out of bad blocks to the end of the drive, (IF YOU HAVE SPACE). Just replace them when you need. Make daily rysnc backups to another server and then you have very low downtime. Keep in mind this setup could likely on server 1-2 users max, the 2
-could be too much if it was hd and sketchy wireless.
-
-
-
 ![1](./IMG_2396.jpg)
 
 **I'm going to speculate here that without extreme optimizations on the pizeros, it will not work well, not enough raspberries
 at high enough a rate :)** 
 Translation for the less creative: 1 core rpi too slow at even oc'd 1.1Ghz speeds. That being said, if you really want it to work fast&easy, I'm sure if immersed in gaseous nitrogen(NO NOT PLASMA*1) oc'd at 1.5Ghz , it would then work, until something cracks and busts :)
+
+I was thinking again, I know its a bad habit to some, but I enjoy it! So , you could use the rpizero as a low power backend and use mythtv and omxplayer along with cp's mythlink.pl. I've used it in the past to make nice labeled links that i could browse then on my phone. Back to point, you can use it with mythvideo as an alternate player and use omxplayer as the alternate player. Then you can record and use the mythtv/ffretv interface but for playback use mythvideo and you can have delayed livetv that way with a little work. The cool thing is the SD cards for 100G have come down in price and still are going down as the larger capacities come out. Sure they are going to wear out but you can use them for several years by using XFS and always keep reserved space so when errors occur the firmware can move data out of bad blocks to the end of the drive, (IF YOU HAVE SPACE). Just replace them when you need. Make daily rysnc backups to another server and then you have very low downtime. Keep in mind this setup could likely on server 1-2 users max, the "2" could be overstated and too much if scenario was 2x hd users on sketchy wireless.
+
+
+
+
+
+
+
+
+
+
 
 ![2](./IMG_2408.jpg)
 
