@@ -25,7 +25,8 @@ If your HDHR Transcode options are set to mobile or lower, you will have wee lil
 ![1](./IMG_2396.jpg)
 
 **I'm going to speculate here that without extreme optimizations on the pizeros, it will not work well, not enough raspberries
-at high enough a rate :)** Nerd Joke Implied Translation for the less creative: 1 core rpi too slow at even oc'd 1.1Ghz
+at high enough a rate :)** 
+Translation for the less creative: 1 core rpi too slow at even oc'd 1.1Ghz speeds. With liguid nitrogen, I think it would be easy though, until something cracks and busts :)
 
 ![2](./IMG_2408.jpg)
 
