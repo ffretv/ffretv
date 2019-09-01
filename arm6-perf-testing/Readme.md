@@ -26,7 +26,26 @@ If your HDHR Transcode options are set to mobile or lower, you will have wee lil
 at high enough a rate :)** 
 Translation for the less creative: 1 core rpi too slow at even oc'd 1.1Ghz speeds. That being said, if you really want it to work fast&easy, I'm sure if immersed in gaseous nitrogen(NO NOT PLASMA*1) oc'd at 1.5Ghz , it would then work, until something cracks and busts :)
 
-I was thinking again, I know its a bad habit to some, but I enjoy it! So , you could use the rpizero as a low power backend and use mythtv and omxplayer along with cp's mythlink.pl. I've used it in the past to make nice labeled links that i could browse then on my phone. Back to point, you can use it with mythvideo as an alternate player and use omxplayer as the alternate player. Then you can record and use the mythtv/ffretv interface but for playback use mythvideo and you can have delayed livetv that way with a little work. 
+I was thinking again, I know its a bad habit to some, but I enjoy it! So , you could use the rpizero as a low power backend and use mythtv and omxplayer along with cp's mythlink.pl. I've used it in the past to make nice labeled links that i could browse then on my phone. Back to point, you can use it with mythvideo to make some viewable links for then alternate player. Omxplayer would be configured as the alternate player. 
+No application with video output except maybe some custom Direct dispmanx diver... can beat Omxplayer on the RPI.
+If it is in a supported format omxplayer supports it will damn will play whatever you throw at it generally speaking.
+Its got all the bells and whistles as old mplayer, which is still around I know, but since omxplayer is really ffmpeg
+for omx-pri I think its still got the backend advantage. FFmpeg is the cats meow for like 18 years or so now. Everybody wishes they had the skills that it took to write such a brilliant peice of work when in reality most people have a hard time even configuring the a build, but thats just because its picky and very complicated, not too unlike a qt build in that way.
+
+That reminds me since I'm going to build a test build off ffmpeg tuned for rpi to compare against mythtv for performance reasons, is that not just like me making my own oxmplayer? It doesnt need any improvement, or at least if it does, its not bothering me. i use omxplayer to view camera screens 24/7 with RPI2's and they work flawless.
+I dubbed that idea omxplayercamview, its not anything special what i did, it was just a functional thing that i needed.
+Here's where I combined it with raspbian if your interested in trying it out. Just be warned I havent updated it in over a year, because i dont need to. I run apt-get updates on the pi's adn they just keep on working though new debian,i mean raspbian releases like no tomorrow. They made more of a debian/raspbian user out of me its quite more fun with debian anyway, redhat guys got more sticks in places than even I can handle way too often anyway, and they you joined with OLE BLUE, well good for you ole raleigh boys. My skills from redhat wont change with IBM but I can develop faster with debian/raspbian on debian. 
+
+You never know, next week I might wipe my hard drive and change all my rpm based servers over to debian/raspbian.
+The little RPI4 can compile qt5 in my configurations natively in a reasonable time, with the older pi, it took days and longer. Many reasons for me to switch to debian full on anyway. Redhat is for admins and the likes most often, and to be honest they dont know jack about the  real plumbing of linux as debian people anyway.
+
+So yes debian people like it or not, im in your boat now, probably till my end too. I've learned to really like building on it because its so fast. 
+Redhat rpm building is so structured, complicated and slow. I can do it fine, but debian is more fun.
+
+https://github.com/kelsieflynn/omxplayercamview.serviceWith-motioneye-raspbian-lite
+
+
+Then you can record and use the mythtv/ffretv interface but for playback use mythvideo and you can have delayed livetv that way with a little work. 
 
 ![2](./IMG_2408.jpg)
 
