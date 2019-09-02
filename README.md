@@ -14,8 +14,7 @@ While redhat is a stalwart, I'm totally BORED WITH IT. Debian fits the bill for 
 It will take me some time to make debs anywhere to the level I  learned to make RPMS, but it will be fun.
 
 ---
-
-Fork and my personal subproject of mythtv that focuses on free tv or over the air tv support; as such, tuner type input device support will be fairly limited to "Digital terrestrial television"*1).
+ffretv is a fork and my personal subproject of mythtv that focuses on free tv or over the air tv support; as such, tuner type input device support will be fairly limited to "Digital terrestrial television"*1).
 
 ffretv will have limited plugins as well with no web browser such as mythbrower. QtWebkit support has been removed and anything depending on it may not work in these builds. TBD.
 
