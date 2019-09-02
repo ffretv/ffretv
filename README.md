@@ -8,8 +8,8 @@ While redhat is a stalwart, I'm totally BORED WITH IT. Debian fits the bill for 
 
 
 
- Though not a strange to me, I've enjoyed working with debian more exclusively on the desktop.
- So, I have switched to debian and the Debian Way.
+ Though not a stranger to me, I've enjoyed working with debian more exclusively on the desktop.
+ So, I have switched to debian and the Debian Way for good.
 
 It will take me some time to make debs anywhere to the level I  learned to make RPMS, but it will be fun.
 
