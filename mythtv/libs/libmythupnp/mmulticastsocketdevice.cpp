@@ -38,7 +38,7 @@
                      .arg(m_address.toString()).arg(socket())
 
 MMulticastSocketDevice::MMulticastSocketDevice(
-    QString sAddress, quint16 nPort, u_char ttl) :
+    QString sAddress, quint16 nPort, unsigned char ttl) :
     MSocketDevice(MSocketDevice::Datagram),
     m_address(sAddress), m_port(nPort)
 {
