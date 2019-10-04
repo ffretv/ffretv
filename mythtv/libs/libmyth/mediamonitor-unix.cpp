@@ -8,9 +8,9 @@
 #include <dirent.h>
 #include <unistd.h>
 #include <fcntl.h>
-#ifndef ANDROID
-#include <fstab.h>
-#endif
+//#ifndef ANDROID
+//#include <fstab.h>
+//#endif
 
 // UNIX System headers
 #include <sys/file.h>
@@ -93,7 +93,7 @@ const char * MediaMonitorUnix::kUDEV_FIFO = "/tmp/mythtv_media";
 // Some helpers for debugging:
 
 static const QString LOC = QString("MMUnix:");
-
+/*
 #ifndef Q_OS_ANDROID
 // TODO: are these used?
 static void fstabError(const QString &methodName)
@@ -103,7 +103,7 @@ static void fstabError(const QString &methodName)
              " for reading, " + ENO);
 }
 #endif
-
+*/
 static void statError(const QString &methodName, const QString &devPath)
 {
     LOG(VB_GENERAL, LOG_ALERT,
@@ -119,7 +119,7 @@ MediaMonitorUnix::MediaMonitorUnix(QObject* par,
                                    unsigned long interval, bool allowEject)
                 : MediaMonitor(par, interval, allowEject), m_fifo(-1)
 {
-    CheckFileSystemTable();
+    //CheckFileSystemTable();
     CheckMountable();
 
     LOG(VB_MEDIA, LOG_INFO, "Initial device list...\n" + listDevices());
@@ -139,11 +139,12 @@ void MediaMonitorUnix::deleteLater(void)
 }
 #endif // !CONFIG_QTDBUS
 
-
+/*
 // Loop through the file system table and add any supported devices.
 bool MediaMonitorUnix::CheckFileSystemTable(void)
 {
-#ifndef Q_OS_ANDROID
+
+   #ifndef Q_OS_ANDROID
     struct fstab * mep = NULL;
 
     // Attempt to open the file system descriptor entry.
@@ -167,6 +168,8 @@ bool MediaMonitorUnix::CheckFileSystemTable(void)
     return false;
 #endif
 }
+
+*/
 
 #if CONFIG_QTDBUS
 // Get a device property by name
@@ -625,18 +628,19 @@ bool MediaMonitorUnix::AddDevice(MythMediaDevice* pDevice)
 
     return true;
 }
-
+/*
 // Given a fstab entry to a media device determine what type of device it is
 bool MediaMonitorUnix::AddDevice(struct fstab * mep)
 {
     if (!mep)
         return false;
 
-#ifndef Q_OS_ANDROID
-    QString devicePath( mep->fs_spec );
-#if 0
+
+//#ifndef Q_OS_ANDROID
+//    QString devicePath( mep->fs_spec );
+//#if 0
     LOG(VB_GENERAL, LOG_DEBUG, "AddDevice - " + devicePath);
-#endif
+//#endif
 
     MythMediaDevice* pDevice = NULL;
     struct stat sbuf;
@@ -721,6 +725,7 @@ bool MediaMonitorUnix::AddDevice(struct fstab * mep)
 
     return false;
 }
+*/
 
 #if CONFIG_QTDBUS
 /*

@@ -11,6 +11,7 @@ using namespace std;
 #include "mythlogging.h"
 #include "mythxdisplay.h"
 #include "util-xv.h"
+#include <string.h>
 
 // X11 headers
 #include <X11/Xatom.h>
@@ -23,7 +24,7 @@ QMap<int,port_info> open_xv_ports;
 
 void close_all_xv_ports_signal_handler(int sig)
 {
-    LOG(VB_GENERAL, LOG_CRIT, QString("Signal: %1").arg(sys_siglist[sig]));
+    LOG(VB_GENERAL, LOG_CRIT, QString("Signal: %1").arg(strsignal(sig)));
     QMap<int,port_info>::iterator it;
     for (it = open_xv_ports.begin(); it != open_xv_ports.end(); ++it)
     {
