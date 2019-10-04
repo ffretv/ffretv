@@ -4,7 +4,7 @@ Buh Bye Redhat! Hello Debian.
 
 After over 20+ years using some form of RPM based desktop, its OVER. I might still use it as a server some, we'll see. Debian makes a pretty sweet server and always has as well. In the olden old days, debian didnt always have all that redhat has purchased and communitized. That was the past now for a long time. I can get every single thing i want from REDHAT now 
 and still use Debian. You might think you know something I dont about that statement, but I doubt it. If I want to run even a redhat kernel on debian, i can and will if I wanted, but dont. If I wanted full selinux, its on debian.
-While redhat is a stalwart, I'm totally BORED WITH IT. Debian fits the bill for the rest of my life, redhat does not.
+While redhat is a stalwart, I'm totally BORED WITH IT. As far as a pre-rolled distro goes, Debian fits the bill for the rest of my life, redhat does not.
 
 
 
