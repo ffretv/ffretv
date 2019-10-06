@@ -1,16 +1,6 @@
 ![ffretv](/ffretv.png)
 
 
-After over 20+ years using some form of RPM based desktop, its OVER. I might still use it as a server some, we'll see. Debian makes a pretty sweet server and always has as well. In the olden old days, debian didnt always have all that redhat has purchased and communitized. That was the past now for a long time. I can get every single thing i want from REDHAT now 
-and still use Debian. You might think you know something I dont about that statement, but I doubt it. If I want to run even a redhat kernel on debian, i can and will if I wanted, but dont. If I wanted full selinux, its on debian.
-While redhat is a stalwart, I'm totally BORED WITH IT. As far as a pre-rolled distro goes, Debian fits the bill for the rest of my life, redhat does not.
-
-
-
- Though not a stranger to me, I've enjoyed working with debian more exclusively on the desktop.
- So, I have switched to debian and the Debian Way for good.
-
-It will take me some time to make debs anywhere to the level I  learned to make RPMS, but it will be fun.
 
 ---
 ffretv is a fork and my personal subproject of mythtv that focuses on free tv or over the air tv support; as such, tuner type input device support will be fairly limited to "Digital terrestrial television"*1).
@@ -41,16 +31,6 @@ for Master its 31-pre with Lib API:
 
 *All my 0.28 projects are now DEPRECATED! While you may use them, I will rarely update them as 29.1 has a better feature set now with ffretv. A new setup introduced in 2016 allowed me to apply my "No WebKit" updated perfect. The new setup included a new method to pull progdetails instead of depending on mythbrowser. That solved a problem in the future a LOT.  Thanks to upstream makes 29.X enough reason to move
 to 29.1+. So far I dont see a downside.
-
-*Once I get the basic setup here like I want it, I will start bringing in and testing my other projects. I will create them respectivaly as branches here.* 
-Git Commentary:
-*I can already tell now that I'm serious about learning the full git system, this is going to save me a huge amount of data and time in the future. It's a pretty sweet IDE like system, with intergrated deduplication-like storage, recovory/reverts from commits/branching and lots more, and yeah I know whom made it orginally. Still its a great setup and I'm glad to FINALLY BE using it better.*
-
-
-
-
-
-
 
 
 
