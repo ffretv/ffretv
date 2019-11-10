@@ -261,8 +261,8 @@ void EITFixUp::Fix(DBEventEIT &event) const
     if (kFixHTML & event.fixup)
         FixStripHTML(event);
 
-    if (kFixHDTV & event.fixup)
-        event.videoProps |= VID_HDTV;
+  //  if (kFixHDTV & event.fixup)
+       event.videoProps |= VID_HDTV;
 
     if (kFixBell & event.fixup)
         FixBellExpressVu(event);
@@ -273,7 +273,7 @@ void EITFixUp::Fix(DBEventEIT &event) const
     if (kFixUK & event.fixup)
         FixUK(event);
 
-    if (kFixPBS & event.fixup)
+ //   if (kFixPBS & event.fixup)
         FixPBS(event);
 
     if (kFixComHem & event.fixup)
