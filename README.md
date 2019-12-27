@@ -1,6 +1,22 @@
 ATSC 3.0 has the potential to affect free over the air tv in drastic ways allegedly all in the name of "BETTER TV".
 RIGHT.  NOTE TO THOSE THAT DEVELOPTED THE UPLINK CHANNEL IN ATSC 3.0. We already have this, ITS CALLED THE INTERNET, WHAT EXACTLY DO YOUR THINK YOUR DOING NOW? HAVE YOUR CAKE AND EAT IT TOO, ONLY BEZOS and OTHER BIG BIZ GETS THAT AND YOU KNOW IT SO , STOP ALREADY! YOUR THE US GOVERNMENT ALREADY, DO I HAVE TO TELL YOU WHOM YOU ARE AND SERVICE FIRST? Evidently you need a reminder or NOTE!
 
+At what point did YOU SELF DECIDE TO CHUNK YOUR OWN DOG CHAIN OUT SO FAR NOW? Whom do you represent if not the people as the US GOVERNMENT and the FCC? Shall you represent business first then the people? Because it seems to me with the upstream channel and your CRAP DESIGN that is exactly where your headed.
+
+So getting  the taxes was not enough for the FCC, had to create your OWN BABY OUTSIDE FOR PROFIT DID YA with ATSC 3.0? WOW, must be some nice kick backs coming for someone with ATSC 3.0. Too bad the 99% wont get checks.
+
+I know how it worked, SOME GENIOUS IN OUR GOVERNMENT CONSULTED POLITICIANS AND SAID WE NEED ALL PROFITS LIKE AMAZON,APPLE,GOOGLE, ETC.
+
+WELCOME TO GOVERMENT VENGENCE 3.0, but wait, if your not doing this for the people ATSC 3.0, then whom the HELL ARE YOU DOING THIS FOR?
+
+Seems to me you just want to bring up TV and turn it into the INTERNET, so you can TAX/ADVERTISE and MONITOR EVERYONE INVASIVLEY EVEN MORE. REAL SMART GENIUS'S , EXCEPT NOTE:
+problem ahead, some people are on to YOUR PLANS and are watching your, yes EVEN YOU IN THE FCC designing upstream channels for profit that you will sell back to Amazon and others. WHOM DO YOU THINK YOUR FOOLING BY TELLING THE MASSES THAT THIS IS THE NEXT BEST THING? LIES and PROPAGANDA FOR PROFIT IS ALL IT IS SO FAR, UNLESS YOU FULLY DISCLOSE THE ATSC 3.0 INTENTIONS OPENLY AND IN DETAIL.
+
+
+LETS TALK ABOUT THAT UPSTEAM CHANNEL YOU SHALL USE, LETS TALK A LOT ABOUT IT.
+
+LETS TALK ABOUT HOW YOU SHALL TRY TO BLOCK ALL CHANNELS IF YOU DONT HAVE A UPLINK AT FIRST, DENY IT pLEASE.
+
 How far shall THE FTC shove its tentacles into our homes and up our wahoos before we say "ENOUGH, THIS NOT OPTIONAL AND OR PUBLIC."?? 
 
 Have an opinion people, dont be so scared. Many people exist with jobs and opinions, it does exist, you can do this, call it balance!
