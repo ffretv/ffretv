@@ -6,7 +6,7 @@ DONT LIKE THAT I MIX REALITY WITH REALITY. TOO BAD.
 WANT TO LIVE IN A CLEAN STERILE TECHNOLOGY BUBBLE OF EXISTENSE WHERE ALL IS UNDER YOUR CONTROL AND PERFECT? TOO BAD AGAIN.
 I MIGHT SUGGEST, IF YOU REALLY NEED THAT KIND OF CONTROL JUST STAY AT WORK 365/24/7 and pretend thats all that exists and be happy. 
 PRO TIP:
-Specifically check if the Win All Us FOundation in Oregon is hiring, I hear they may be like minded for you to join.
+Specifically check if the Win All Us FOundation in Oregon is hiring, I hear they may be like minded workplace for you to consider joining.
 
 THIS CONTENT IS DIRECTLY RELATABLE TO THE WORK I HAVE BEEN DOING FOR YEARS. MAKE SURE YOU THINK YOU KNOW WHAT YOU KNOW BEFORE YOU ACUSE ME OF LIBERALLY APPLYING SOMETHING IN YOUR TENDER SPOT WITHOUT PERMISSSION.
 
