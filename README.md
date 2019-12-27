@@ -30,6 +30,7 @@ A. We better have some ideas and not leave it all to UPSTREAM to develop all  ki
 
 
 
+
 ---
 ffretv is a fork and my personal subproject of mythtv that focuses on free tv or over the air tv support; as such, tuner type input device support will be fairly limited to "Digital terrestrial television"*1).
 
@@ -44,14 +45,26 @@ I like mythtv upstream I just had the desire to have something less of an attemp
 
 What's currently going on with my branches?
 
-I have limited branches to maintain here:
-I play around with master/0.31pre but mostly my projects are just now moving to 0.29 Fixes.
-This is where I forked with regards to 29.X
+I just recently at the end of 2019 finished up moving all my legacy mythtv/ffretv 0.28-fixes projects over to 29/fixes.
+So while upstream perceptibly can move at light speed with huge dev numbers and incremental increases, I alone am pokey joe!
+
+In the short time I've been on my ffretv 29/fixes, I'm quite happy with it. It feels lean, but it is still a far from a prefect setup and still has flaws  that I'm still whittling away at it, little at a time.
+
+Unless I find a major flaw in the 29/fixes series with ffretv I expect to turn this into a LTS type release cycle for 29/fixes. Eg. I may decide to use 29/fixes base code set, for a 3-5 year period before moving to the next major upstream release.
+
+I will backport upstream code from master as needed for the 29/fixes branch. Mostly trivial code changes can be backported no problem, but dont expect whole new feature sets from 30/31+ master to make its way back to the ffretv-29/fixes flavor unless its really special.
+
+When its time for ffretv to move to the next mythtv release base codeset, no matter if it is upstream 30/31/32, I will use the easist and/or most productive method possible for me to re-impliment my most important changesets. Eg. I may refork 30-32 and/or reapply ffretv changes afterwards. Or I may just increment merge up the dev chain minimally and manually, not sure yet. 
+
+
+Original Fork Point from upstream I used for ffretv 29/fixes aka intended ffretv-29/fixes-LTS
 ```
 MythTV Version : v29.1
 Network Protocol : 91
 Library API : 29.20180316-1
 ```
+
+
 for Master its 31-pre with Lib API:
 ```
 31.20190109-1
