@@ -55,7 +55,7 @@ What's currently going on with my branches?
 I just recently at the end of 2019 finished up moving all my legacy mythtv/ffretv 0.28-fixes projects over to 29/fixes.
 So while upstream perceptibly can move at light speed with huge dev numbers and incremental increases, I alone am pokey joe!
 
-In the short time I've been on my ffretv 29/fixes, I'm quite happy with it. It feels lean, but it is still a far from a prefect setup and still has flaws  that I'm still whittling away at it, little at a time.
+In the short time I've been on my ffretv 29/fixes, I'm quite happy with it. It feels lean, but it is still a far from a prefect setup and still has flaws  that I'm still whittling away.
 
 Unless I find a major flaw in the 29/fixes series with ffretv I expect to turn this into a LTS type release cycle for 29/fixes. Eg. I may decide to use 29/fixes base code set, for a 3-5 year period before moving to the next major upstream release.
 
