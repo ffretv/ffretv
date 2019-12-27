@@ -1,4 +1,4 @@
-You've heard it before. Some people write cursive, drive stick shift cars, do math and talk back aka complain. Yep it is true. Not everyone is an invertibrate vessel of a product fully intended only to  some denomiation of currency. Some people know tech, make money, understand tech and still , yes , still , care about the potential future.
+You've heard it before. Some people write cursive, drive stick shift cars, do math and talk back aka complain. Yep it is true. Not everyone is an invertibrate vessel of a product fully intended for service only to  some denomiation of currency. Some people know tech, make money, understand tech and still , yes , still , care about the potential future.
 
 
 
