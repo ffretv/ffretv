@@ -10,8 +10,8 @@ Specifically check if the Win All Us FOundation in Oregon is hiring, I hear they
 
 THIS CONTENT IS DIRECTLY RELATABLE TO THE WORK I HAVE BEEN DOING FOR YEARS. MAKE SURE YOU THINK YOU KNOW WHAT YOU KNOW BEFORE YOU ACUSE ME OF LIBERALLY APPLYING SOMETHING IN YOUR TENDER SPOT WITHOUT PERMISSSION.
 
-You've heard it before. Some people write cursive, drive stick shift cars, do math and talk back aka complain. Yep it is true. Not everyone is an invertibrate vessel of a product fully intended for service only to  some denomiation of currency. Some people know tech, make money, understand tech and still , yes , still , care about the potential future.
-
+You've heard it before. Some people write cursive, drive stick shift cars, do math and talk back aka complain. Yep it is true. Not everyone is an invertibrate vessel of a product fully intended for service only to  some denomiation of currency. Some people know tech, make money, understand history and politics and still , yes , still , care about the potential future. Not all nerds are mathemticians with the emotional capacity of a ibm comptatible clone. Some do have a wide range of abilities and are similar to me. My words are to appeal to those types the most that they have to pay attention, you cant just let a group of unempathetic often wealthy revengeful nerds run everything, not going to work out well for the masses.
+Reasonable intelligent people must be reached and informed.
 
 
 Why ATSC 2.0 was NOT GOOD ENOUGH for the FCC and OUR TV STANDARDS?
