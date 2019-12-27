@@ -1,12 +1,16 @@
 ![ATSC 3.0 Opinion](/ATSC3.0_Opinion.jpg)
 
 
+Q.Do we have any say or choices in the matter?
+
+A. We better have some ideas and not leave it all to UPSTREAM to develop all  kit/kabootle or we shall NOT in return COMPLAIN when they REEM us LATER!" TradeMark:Sm@rt@$$
+
+
+![ATSC 3.0 Opinion-NONFREE-EXCLUSIONS-OUTSIDE-UPSTREAM-CHANNEL-ACCESS-CONTROLLS](/ATSC3.0_Opinion_NONPROFIT_EXCLUSIONS.jpg)
 
 
 
-
-
-
+---
 
 
 
