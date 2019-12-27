@@ -4,9 +4,7 @@ OFC, SEND ME A EMAIL OR NOTE THAT I HAVE VIOLATED YOUR INTENDED USE UNDERSTANDIN
 
 DONT LIKE THAT I MIX REALITY WITH REALITY. TOO BAD.
 WANT TO LIVE IN A CLEAN STERILE TECHNOLOGY BUBBLE OF EXISTENSE WHERE ALL IS UNDER YOUR CONTROL AND PERFECT? TOO BAD AGAIN.
-
-IF YOU REALLY NEED THAT KIND OF CONTROL JUST STAY AT WORK 365/24/7 and pretend thats all that exists and be happy.
-
+I MIGHT SUGGEST, IF YOU REALLY NEED THAT KIND OF CONTROL JUST STAY AT WORK 365/24/7 and pretend thats all that exists and be happy.
 THIS CONTENT IS DIRECTLY RELATABLE TO THE WORK I HAVE BEEN DOING FOR YEARS. MAKE SURE YOU THINK YOU KNOW WHAT YOU KNOW BEFORE YOU ACUSE ME OF LIBERALLY APPLYING SOMETHING IN YOUR TENDER SPOT WITHOUT PERMISSSION.
 
 You've heard it before. Some people write cursive, drive stick shift cars, do math and talk back aka complain. Yep it is true. Not everyone is an invertibrate vessel of a product fully intended for service only to  some denomiation of currency. Some people know tech, make money, understand tech and still , yes , still , care about the potential future.
