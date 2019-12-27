@@ -71,7 +71,7 @@ Note:
 but wait, if your not doing this for the people ATSC 3.0, then whom the HELL ARE YOU DOING THIS FOR?
 
 ```
-Now that brings me to comment I know all Democrats and Republicans will want to take credit for all future ATSC 3.0 profits, now which one of you PUTz's want to take credit for the REST of the FALOUT AFTERWARDS?
+Now that brings me to comment I know all Democrats and Republicans will want to take credit for all future ATSC 3.0 profits, now which one of you PUTz's want to take credit for the REST of the FALLOUT AFTERWARDS?
 ```
 
 POLITICIANS AND PUNDITS, PLEASE TAKE A SIDE AND VOLUNTEER CLEARLY NOW SO WE CAN BLAME YOU LATER! WHEN YOUR WRONG.
