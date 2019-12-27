@@ -1,3 +1,7 @@
+You've heard it before. Some people write cursive, drive stick shift cars, do math and talk back aka complain. Yep it is true.
+
+
+
 Why ATSC 2.0 was NOT GOOD ENOUGH for the FCC and OUR TV STANDARDS?
 
 1) SOMEBODY WANTED MORE DIRECT ACCESS TO PROFITS BY A UPSTREAM CHANNEL AND THE CONTROL THAT COMES WITH.
