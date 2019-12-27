@@ -11,7 +11,13 @@ I know how it worked, SOME GENIOUS IN OUR GOVERNMENT CONSULTED POLITICIANS AND S
 
 WELCOME TO GOVERMENT VENGENCE 3.0,
 
-AKA GOVERNMENT ADs 3.0
+AKA GOVERNMENT ADs 3.0. 
+
+Note:
+*Some theatres may call this epic battle:
+```
+"US GOVERNMENT ADSENSE 3.0 vs TECH GIANTS, IN BED WITH BUT NOT DONE NOW. TV Appocalypse 3.0"
+```
 
 
 but wait, if your not doing this for the people ATSC 3.0, then whom the HELL ARE YOU DOING THIS FOR?
