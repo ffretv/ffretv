@@ -1,3 +1,7 @@
+Wut, you dont like my SOCIAL MEDIA OPTIONS. THIS IS ALSO SOCIAL MEDIA.
+DONT LIKE THAT I MIX REALITY WITH REALITY. TOO BAD.
+WANT TO LIVE IN A CLEAN STERILE TECHNOLOGY BUBBLE OF EXISTENSE WHERE ALL IS UNDER YOUR CONTROL AND PERFECT? TOO BAD AGAIN.
+
 You've heard it before. Some people write cursive, drive stick shift cars, do math and talk back aka complain. Yep it is true. Not everyone is an invertibrate vessel of a product fully intended for service only to  some denomiation of currency. Some people know tech, make money, understand tech and still , yes , still , care about the potential future.
 
 
