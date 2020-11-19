@@ -71,7 +71,6 @@ class ATSCEtt
 typedef QMap<uint,ATSCEvent>               EventIDToATSCEvent;
 typedef QMap<uint,ATSCEtt>                 EventIDToETT;
 typedef QMap<uint,EventIDToATSCEvent>      ATSCSRCToEvents;
-typedef QMap<uint,EventIDToETT>            ATSCSRCToETTs;
 typedef QMap<unsigned long long,uint>      ServiceToChanID;
 
 typedef uint64_t                           FixupKey;
@@ -153,7 +152,6 @@ class EITHelper
 
     FixupMap fixup;
     ATSCSRCToEvents         incomplete_events;
-    ATSCSRCToETTs           unmatched_etts;
 
     MythDeque<DBEventEIT*>     db_events;
 
