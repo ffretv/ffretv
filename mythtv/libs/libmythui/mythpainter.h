@@ -8,6 +8,7 @@
 #include <QPaintDevice>
 #include <QMutex>
 #include <QSet>
+#include <QPainterPath>
 
 class QRect;
 class QRegion;
