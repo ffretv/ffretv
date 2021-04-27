@@ -5566,7 +5566,9 @@ case $target_os in
         strip="strip -d"
         ;;
     darwin)
-        enable  appleremote
+        disable vda
+	disable lirc
+        disable  appleremote
         enable  backend
         enable  darwin
         disable dvb
